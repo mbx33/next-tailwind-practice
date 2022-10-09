@@ -6,7 +6,8 @@ const ContactPage = () => {
 	return (
 		<div>
 			<Navbar />
-			<h1>Contact us</h1>
+			<h1 className="text-6xl text-center font-bold ">Contact Us</h1>
+
 			<BasicForm />
 		</div>
 	);

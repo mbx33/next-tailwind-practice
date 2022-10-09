@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import Head from 'next/head';
+
+// import components
+import Menu from '../components/Menu';
 import Navbar from '../components/Navbar';
+import UserCard from '../components/UserCard';
 
 export default function Home() {
 	return (
@@ -12,6 +16,21 @@ export default function Home() {
 			</Head>
 			<Navbar />
 			<h1 className="text-center text-6xl">HomePage</h1>
+			<section className="flex gap-10">
+				<div className=" w-1/2 grid grid-cols-2 gap-3 p-6">
+					<UserCard />
+					<UserCard />
+					<UserCard />
+					<UserCard />
+					<UserCard />
+					<UserCard />
+					<UserCard />
+					<UserCard />
+				</div>
+				<div className="grid grid-cols-1">
+					<Menu />
+				</div>
+			</section>
 		</div>
 	);
 }
